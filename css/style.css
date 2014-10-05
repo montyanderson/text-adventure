@@ -1,0 +1,34 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	font-family: "Lobster";
+	font-size: 8em;
+}
+
+#console, #command {
+	font-family: "Source Code Pro";
+}
+
+#console {
+	width: 50em;
+	height: 30em;
+
+	overflow-x: auto;
+	overflow-y: scroll;
+
+	display: inline-block;
+	text-align: left;
+}
+
+#command {
+	width: 50em;
+}
+
+#profile {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+}
