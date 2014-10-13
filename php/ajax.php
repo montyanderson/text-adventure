@@ -19,6 +19,13 @@ foreach(explode(" ", $command) as $argument) {
 $output = array();
 $output["response"] = commands($arguments);
 
+if($_SESSION["adventure"] == false && 
+   $_SESSION["name"] != "Anonymous" &&
+   $_SESSION["age"]  != 0) {
+   	$output .= "<br />Let's start the adventure, do <strong>adventure start</strong>!";
+   	$_SESSION["adventure"] = true;
+   }
+
 $output["data"] = array();
 $output["data"]["name"]  = $_SESSION["name"];
 $output["data"]["room"]  = $_SESSION["room"];
