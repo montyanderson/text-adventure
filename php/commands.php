@@ -14,6 +14,7 @@ function commands($arguments) {
 			$_SESSION["room"]  = "Town Hall";
 			$_SESSION["age"]   = 18;
 			$_SESSION["money"] = 100;
+			$_SESSION["adventure"] = false;
 
 			$output = "Welcome, to set your name, do <strong>name YourName</strong>.";
 			break;
@@ -38,7 +39,13 @@ function commands($arguments) {
 			} else {
 				$output = "";
 			}
-
+			break;
+			
+			
+		case "money":
+			if(count($arguments) == 1) {
+				$output = "You have £" . $_SESSION["money"];
+			}
 	}
 
 	return $output;
