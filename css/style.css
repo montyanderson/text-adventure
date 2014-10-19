@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	font-family: "Ubuntu";
 }
 
 h1 {
@@ -30,5 +31,8 @@ h1 {
 	position: fixed;
 	z-index: 100;
 	top: 0;
-	right: 0;
+	right: 10%;
+
+	text-align: left;
+	font-size: 1.2em;
 }

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	function command(cmd) {
-		$("#console")[0].innerHTML += "<strong>$ " + cmd + "</strong><br />";
+		$("#console")[0].innerHTML += "<strong>$ " + $("<span>").html(cmd).text() + "</strong><br />";
 
 		$.ajax({
 			type: "POST",
