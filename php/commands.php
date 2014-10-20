@@ -56,9 +56,13 @@ function commands($arguments) {
 
 		case "adventure":
 			if($arguments[1] == "start") {
-				$output = "I'm glad that you're ready to start, <strong>" . $_SESSION["name"] . "</strong>.";
-				$_SESSION["adventure"] = true;
-				$_SESSION["motd"] = "On an Adventure!";
+				if($_SESSION["adventure"] == false) {
+					$output = "I'm glad that you're ready to start, <strong>" . $_SESSION["name"] . "</strong>.";
+					$_SESSION["adventure"] = true;
+					$_SESSION["motd"] = "On an Adventure!";
+				} else {
+					$output = "You're already on an adventure!";
+				}
 			}
 	}
 
