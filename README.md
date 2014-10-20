@@ -16,6 +16,12 @@ Client-side and server-side communication
   * **profile.js** renders the profile in the top right corner
   * The script renders the user profile and writes out the response
 
+Progress Log
+------------
+
+  * Made engine (splits up command into arguments, trims)
+  * 
+
 Plot
 ----
 
