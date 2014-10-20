@@ -20,7 +20,11 @@ Progress Log
 ------------
 
   * Made engine (splits up command into arguments, trims)
-  * 
+  * Added basic commands (**name**, **age**)
+  * Added user profile UI (shows name, age, money)
+  * Escapes HTML on both the client and the server (safer)
+  * Once both name and age is set, it prompts the user to start adventure
+  * Added **adventure start** command
 
 Plot
 ----
