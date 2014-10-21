@@ -21,7 +21,6 @@ $output["response"] = commands($arguments);
 
 if($_SESSION["adventure"] == false && $_SESSION["name_set"] == true && $_SESSION["age_set"] == true) {
    	$output["response"] .= "<br />Let's start the adventure, do <strong>adventure start</strong>!";
-   	$_SESSION["adventure"] = true;
 }
 
 $output["data"] = array();

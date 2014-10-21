@@ -10,6 +10,8 @@ $(document).ready(function() {
 			success: function(res) {
 				var data = JSON.parse(res);
 				$("#console")[0].innerHTML += data["response"] + "<br />";
+				$(window).scrollTop($(document).height());
+				
 				userprofile(data["data"]);
 			}
 		});
