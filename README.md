@@ -25,7 +25,7 @@ Progress Log
   * Escapes HTML on both the client and the server (safer)
   * Once both name and age is set, it prompts the user to start adventure
   * Added **adventure start** command
-  * Added an *inventory system* (for user and floor of each room)
+  * Added an **inventory system** (for user and floor of each room)
   * Allows user to **pickup** objects (removes from floor inventory and places into user inventory)
 
 Plot
